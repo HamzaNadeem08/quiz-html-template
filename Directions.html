@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./img/tabimg.png">
+
+    <title>Toefl Test</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/toefl2.css" rel="stylesheet">
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./dist/easytimer.min.js"></script>
+    <style>
+        #sortable1, #sortable2, #sortable3 { list-style-type: none; margin: 0; float: left; margin-right: 10px; padding: 5px; width: 143px;}
+        #sortable1 li, #sortable2 li, #sortable3 li { margin: 5px; padding: 5px; font-size: 16px; width: 120px; cursor: move;}
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  </head>
+    <div class="top-header bg-white border py-2">
+      <div class="evolution row px-5 ml-0 mr-0">
+        <div class="logo-brand col-md-5 col-12">
+            <div class="for-responsive pt-2">
+                <img class="img-size" src="./img/logo.png">
+            </div>    
+        </div>
+        <div class="oval-btn-div col-md-7 col-12">
+          <span class="float-right py-3">
+            <a href="" class="custom-vol vol-btn vol-rotate vol-embossed-link mr-3 review-pd "><span class="straight"><span>Review</span><br><img class="icon-align seacrh-img mark-place" src="./img/search.png"></span></a>
+            <a href="" class="custom-vol vol-btn vol-rotate vol-embossed-link mr-3 help-pd "><span class="straight"><span>Help</span><br><img class="icon-align mark-place" src="./img/questionMark.png"></span></a>
+            <a href="" class="custom-vol vol-btn vol-rotate vol-embossed-link mr-3 next-pd"><span class="straight"><span>Back</span><br><img class="icon-align back-img tick-place" src="./img/back.png"></span></a>
+            <a href="" class="custom-vol vol-btn vol-rotate vol-embossed-link mr-3 next-pd"><span class="straight"><span>Next</span><br><img class="icon-align back-img tick-place" src="./img/next.png"></span></a>
+          </span>
+        </div>
+      </div>
+      <div class="row ml-0 mr-0"> 
+            <div class="col-md-7 col-12 text-align-right pr-0">
+                <span class="question-heading">Question 1 of 14</span> 
+            </div>
+            <div class="col-md-5 col-12">
+                    <div class="btn-below col-12 px-5"> 
+                            <a href="" class="custom fulscrn-btn full-embossed-link mr-3 float-right">Fullscreen</a>
+                            <a href="" class="custom exit-btn embossed-link mr-3 float-right">View Text</a>
+                            <a href="" class="custom exit-btn embossed-link mr-3 float-right">Exit Test</a>
+                        </div>
+                <div class="time-div">
+                    <button id="hide-btn" class="hide-btn-style">Hide Time</button>
+                    <div id="basicUsage" class="display-inline">00:00:00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row pt-3 ml-0 mr-0">
+        <div class="col-md-6 col-12 direction-bg text-center py-2 px-5">
+            <p class="time-text">Directions</p>
+            <p class="text-color">An introductory sentence for a brief summary of the passage is provided below. Complete the summary by selecting the THREE answer choices that express the most important ideas in the passage. Some sentences do not belong in the summary because they express ideas that are not presented in the passage or are minor ideas in the passage. <strong>This question is worth 2 points.</strong></p>
+        </div>
+        <div class="col-md-6 col-12 note-bg note-pd text-center py-2 px-5">
+            <p class="time-text">Note</p>
+            <p class="text-color">Drag your answer choices to the spaces where they belong. To remove an answer choice, drag it back.To review the passage, click <strong><a href="#" class="view-text-link">VIEW TEXT</a></strong>.</p>
+
+        </div>
+    </div>
+    <div class="row ml-0 mr-0 text-center py-2">
+        <div class="col-12">
+            <p class="text-color">When a photon is absorbed by the chromophore, a chemical reaction 
+                <br>causes the photon's energy to be converted into electrical energy and 
+                <br>relayed, in higher animals, to the nervous system.</p>
+    
+            <ul id="sortable3" class="droptrue draggable-portion">
+            </ul>
+        </div>
+    </div>
+    <div class="row answer-choice-bg ml-0 mr-0 text-center py-2">
+        <div class="col-12">
+            <p class="ans-choice-heading">Answer Choices</p>
+        </div>
+        <!-- <div class="col-12 pb-3">
+            <ul id="sortable1" class="droptrue drag-answers-bg">
+                <li class="ui-state-default">In all jellyfish, a chemical reaction occurs when a photon is absorbed by the chromophore and relayed to the nervous system and brain.</li>
+                <li class="ui-state-default">In higher animals, a chemical reaction occurs when a photon is absorbed by the chromophore and relayed to the nervous system and brain.</li>
+                <li class="ui-state-default">In higher animals, a chemical reaction occurs when a photon is absorbed by the chromophore and relayed to the muscles.</li>
+                <li class="ui-state-default">In all jellyfish, a chemical reaction occurs when a photon is absorbed by the chromophore and relayed to the nervous system and brain.</li>
+                <li class="ui-state-default">In higher animals, a chemical reaction occurs when a photon is absorbed by the chromophore and relayed to the nervous system and brain.</li>
+                <li class="ui-state-default">In higher animals, a chemical reaction occurs when a photon is absorbed by the chromophore and relayed to the muscles.</li>
+            </ul>
+        </div> -->
+        <div class="col-md-6 col-12 pb-3">
+            <ul id="sortable1" class="droptrue drag-answers-bg">
+                <li class="ui-state-default"><span class="bold">A.</span> In all jellyfish, a chemical reaction occurs when a photon is absorbed by the chromophore and relayed to the nervous system and brain.</li>
+                <li class="ui-state-default"><span class="bold">B.</span> In higher animals, a chemical reaction occurs when a photon is absorbed by the chromophore and relayed to the nervous system and brain.</li>
+                <li class="ui-state-default"><span class="bold">C.</span> In higher animals, a chemical reaction occurs when a photon is absorbed by the chromophore and relayed to the muscles.</li>
+            </ul>
+        </div>
+        <div class="col-md-6 col-12">
+            <ul id="sortable2" class="droptrue drag-answers-bg">
+                    <li class="ui-state-default"><span class="bold">D.</span> In all jellyfish, a chemical reaction occurs when a photon is absorbed by the chromophore and relayed to the nervous system and brain.</li>
+                    <li class="ui-state-default"><span class="bold">E.</span> In higher animals, a chemical reaction occurs when a photon is absorbed by the chromophore and relayed to the nervous system and brain.</li>
+                    <li class="ui-state-default"><span class="bold">F.</span> In higher animals, a chemical reaction occurs when a photon is absorbed by the chromophore and relayed to the muscles.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="scroll-page-footer">
+            <div class="col-12 text-center">
+                    &copy;Copyright 2018 Total TOEFL Time
+            </div>
+        </div>
+    <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./js/bootstrap.min.js"></script>
+    <script>
+        var timer = new Timer();
+        timer.start();
+        timer.addEventListener('secondsUpdated', function (e) {
+        $('#basicUsage').html(timer.getTimeValues().toString());
+        });
+
+        $(document).ready(function(){
+            $("#hide-btn").click(function(){
+                if($(this).html() == 'Hide Time') {
+                    $(this).html('Show Time');
+                }
+                else{
+                    $(this).html('Hide Time');
+                }
+            $("#basicUsage").toggle();
+        });
+        });
+    </script>
+    <script>
+            $( function() {
+              $( "ul.droptrue" ).sortable({
+                connectWith: "ul",
+                stop: function( event, ui ) {
+                   if ($('#sortable3').children().length>3){
+                       return false;
+                   }
+                }
+              });   
+              $( "#sortable1, #sortable2, #sortable3" ).disableSelection();
+            } );
+            </script>    
+  </body>
+</html>

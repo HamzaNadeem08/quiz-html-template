@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./img/tabimg.png">
+
+    <title>Toefl Test</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/toefl2.css" rel="stylesheet">
+    <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/height.js"></script>
+    <script src="./dist/easytimer.min.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                       <img class="sidebrand" src="./img/logo.png">
+                    </a>
+                </li>
+                <li>
+                    <img class="sidebar-img" src="./img/line-chart.png">
+                    <a href="#">Progress & Analysis</a>
+                </li>
+                <li>
+                    <img class="sidebar-img" src="./img/edit.png">
+                    <a href="#">TOEFL Questions</a>
+                </li>
+                <li>
+                    <img class="sidebar-img" src="./img/test.png">
+                    <a href="#">Tests & Reviews</a>
+                </li>
+                <li>
+                    <img class="sidebar-img" src="./img/ask.png">
+                    <a href="#">Ask an Instructor</a>
+                </li>
+            </ul>
+        </div>
+        <div class="modal" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">More Text</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>You should use the scroll bar to read the whole passage before you begin to answer the question.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="page-content-wrapper">
+            <div class="h1-t">
+                <div class="top-header bg-white border">
+                    <div class="evolution row px-5 ml-0 mr-0">
+                        <!-- <div class="logo-brand col-md-5 col-12">
+                            <div class="for-responsive pt-2">
+                                 <img class="img-size" src="./img/logo.png"> 
+                            </div>
+                        </div> -->
+                        <div class="oval-btn-div col-12">
+                            <span class="float-right py-3">
+                                <a href="" class="custom-vol vol-btn vol-rotate vol-embossed-link mr-3 review-pd ">
+                                    <span class="straight">
+                                        <span>Review</span>
+                                        <br>
+                                        <img class="icon-align seacrh-img mark-place" src="./img/search.png">
+                                    </span>
+                                </a>
+                                <a href="" class="custom-vol vol-btn vol-rotate vol-embossed-link mr-3 help-pd ">
+                                    <span class="straight">
+                                        <span>Help</span>
+                                        <br>
+                                        <img class="icon-align mark-place" src="./img/questionMark.png">
+                                    </span>
+                                </a>
+                                <a href="" class="custom-vol vol-btn vol-rotate vol-embossed-link mr-3 next-pd">
+                                    <span class="straight">
+                                        <span>Back</span>
+                                        <br>
+                                        <img class="icon-align back-img tick-place" src="./img/back.png">
+                                    </span>
+                                </a>
+                                <a href="Directions.html" id="btn-next" class="custom-vol vol-btn vol-rotate vol-embossed-link mr-3 next-pd">
+                                    <span class="straight">
+                                        <span>Next</span>
+                                        <br>
+                                        <img class="icon-align back-img tick-place" src="./img/next.png">
+                                    </span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row ml-0 mr-0">
+                        <div class="col-md-7 col-12 pl-0">
+                            <a href="#menu-toggle" class="side-menu-btn" id="menu-toggle"><i class="fa fa-chevron-right"></i></a>
+                            <span class="question-heading float-right">Question 1 of 14</span>
+                        </div>
+                        <div class="col-md-5 col-12">
+                            <div class="btn-below2 col-12">
+                                <a href="" class="custom fulscrn-btn full-embossed-link mr-5 float-right">Fullscreen</a>
+                                <a href="" class="custom exit-btn embossed-link mr-3 float-right">Exit Test</a>
+                            </div>
+                            <div class="time-div">
+                                <button id="hide-btn" class="hide-btn-style">Hide Time</button>
+                                <div id="basicUsage" class="display-inline">00:00:00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-area">
+                <div class="row ml-0 mr-0">
+                    <div class="col-md-6 col-12 evolution-border px-5">
+                        <p class="time-text p-div-heading">The word
+                            <mark>evolution</mark> in paragraph
+                            <br> 1 is closest in meaning to:</p>
+                        <!-- <ul class="border-oval">
+                                <li><p class="text-color pl-3 pb-3">Progress</p></li>
+                                <li><p class="text-color pl-3 pb-3">Change in habits and behaviour.</p></li>
+                                <li><p class="text-color pl-3 pb-3">Change in heritable traits.</p></li>
+                                <li><p class="text-color pl-3 pb-3">Development of the human species.</p></li>
+                        </ul> -->
+                        <label class="container">Progress
+                            <input type="radio" checked="checked" name="radio" checked="false">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Change in habits and behaviour
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Change in heritable traits
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Development of human species
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p class="time-text p-div-heading ft-weight-400">Paragraph 1 is marked with an arrow.
+                            <i class="fa fa-long-arrow-right pl-2" aria-hidden="true"></i>
+                        </p>
+                        <div class="footer-note">
+                            <div class="col-12 text-center">
+                                <p>Click on oval to select your answer. To choose a different answer,
+                                    <br>click one different oval.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="evol" class="col-md-6 col-12 evolution-border evolution-scroll text-center">
+                        <p class="time-text">The Evolution Of Eyes</p>
+                        <p class="text-color justify px-4">
+                            <span class="evolution-numb">
+                                <i class="fa fa-long-arrow-right pl-2" aria-hidden="true"></i>[1]</span> It is believed that eyes evolved over a few million years during the Cambrian
+                            explosion, a rapid period of
+                            <mark>evolution</mark> . Prior to this era, there is no direct evidence of eyes. Eyes have a vast range
+                            of adaptations to meet the needs of the organism. They vary in visual acuity, the array of wavelength
+                            detected, sensitivity in low light, color discrimination and their capacity to identify motion.</p>
+                        <p class="text-color justify px-4">
+                            <span class="evolution-numb">[2]</span> Charles Darwin, in On the Origin of Species, suggests that the eye evolved from "an optic
+                            nerve merely coated with pigment, and without any other mechanism" to "a moderately high stage of
+                            perfection". Darwin presented intermediate grades of evolution and made suggestions that were soon
+                            shown to be correct. Since this time, modern scientists have been putting forward work on the topic
+                            of eye evolution, suggesting that the eye developed from a vertebrate patch of photoreceptors. Current
+                            research validates the theory of Darwin.</p>
+                        <p class="text-color justify px-4">
+                            <span class="evolution-numb">[3]</span> It is believed that eyes evolved over a few million years during the Cambrian explosion,
+                            a rapid period of evolution . Prior to this era, there is no direct evidence of eyes. Eyes have a
+                            vast range of adaptations to meet the needs of the organism. They vary in visual acuity, the array
+                            of wavelength detected, sensitivity in low light, color discrimination and their capacity to identify
+                            motion.</p>
+                        <p class="text-color justify px-4">
+                            <span class="evolution-numb">[4]</span> It is believed that eyes evolved over a few million years during the Cambrian explosion,
+                            a rapid period of evolution . Prior to this era, there is no direct evidence of eyes. Eyes have a
+                            vast range of adaptations to meet the needs of the organism. They vary in visual acuity, the array
+                            of wavelength detected, sensitivity in low light, color discrimination and their capacity to identify
+                            motion.</p>
+                        <p class="text-color justify px-4">
+                            <span class="evolution-numb">[5]</span> It is believed that eyes evolved over a few million years during the Cambrian explosion,
+                            a rapid period of evolution . Prior to this era, there is no direct evidence of eyes. Eyes have a
+                            vast range of adaptations to meet the needs of the organism. They vary in visual acuity, the array
+                            of wavelength detected, sensitivity in low light, color discrimination and their capacity to identify
+                            motion.</p>
+                        <p class="text-center end-text">** END **</p>
+                    </div>
+                </div>
+                <div class="page-footer">
+                    <div class="col-12 text-center">
+                            &copy;Copyright 2018 Total TOEFL Time
+                    </div>
+                </div>
+                <input type="hidden" id="is_scrolled">
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script>
+        var timer = new Timer();
+        timer.start();
+        timer.addEventListener('secondsUpdated', function (e) {
+            $('#basicUsage').html(timer.getTimeValues().toString());
+        });
+
+        $(document).ready(function () {
+            $("#hide-btn").click(function () {
+                if ($(this).html() == 'Hide Time') {
+                    $(this).html('Show Time');
+                }
+                else {
+                    $(this).html('Hide Time');
+                }
+                $("#basicUsage").toggle();
+            });
+        });
+
+        var verticalScrollPresent = document.getElementById("evol").scrollHeight !== document.getElementById("evol").clientHeight;
+        if (!verticalScrollPresent) {
+            $("#is_scrolled").val("yes");
+        }
+
+        $(".evolution-scroll").scroll(function () {
+            $("#is_scrolled").val('yes');
+        });
+
+        $("#btn-next").click(function (e) {
+            e.preventDefault();
+            var href = $(this).attr("href");
+            if ($("#is_scrolled").val() !== 'yes') {
+                $("#myModal").modal('show');
+                return false;
+            }
+            else {
+                location.href = href;
+            }
+        });
+        $("input:radio").attr("checked", false);
+
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+
+    </script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

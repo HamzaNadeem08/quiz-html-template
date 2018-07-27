@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./img/tabimg.png">
+
+    <title>Toefl Test</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/toefl2.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./dist/easytimer.min.js"></script>
+  </head>
+
+  <body>
+        <div class="modal" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">More Text</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button> 
+                    </div>
+                    <div class="modal-body">
+                      <p>You should use the scroll bar to read the whole passage before you begin to answer the question.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                  
+                </div>
+        </div>
+
+    <div class="top-header bg-white border py-2">
+      <div class="row px-5 ml-0 mr-0">
+        <div class="logo-brand col-md-5 col-12">
+            <div class="for-responsive pt-2">
+                <img class="img-size" src="./img/logo.png">
+            </div>
+        </div>
+        <div class="oval-btn-div col-md-7 col-12">
+          <span class="float-right py-3">
+            <a href="" class="custom-vol vol-btn vol-rotate vol-embossed-link mr-3 help-pd "><span class="straight"><span>Help</span><br><img class="icon-align mark-place" src="./img/questionMark.PNG"></span></a>
+            <a href="Note.html" id ="btn-next" class="custom-vol vol-btn vol-rotate vol-embossed-link mr-3 next-pd"><span class="straight"><span>Next</span><br><img class="icon-align tick-place" src="./img/arrow.PNG"></span></a>
+            <a href="" class="custom-vol vol-btn vol-rotate vol-embossed-link"><span class="straight"><span class="vol-text">Volume</span><br><img class="icon-align" src="./img/VolumeIcon.png"></span></a>
+          </span>
+        </div>
+      </div>
+      <div class="row ml-0 mr-0"> 
+            <div class="col-md-7 col-12 text-align-right pr-0">
+                <span class="question-heading">Question 1 of 1</span> 
+            </div>
+            <div class="col-md-5 col-12">
+                    <div class="btn-below2 col-12 px-5 pt-2"> 
+                            <a href="" class="custom fulscrn-btn full-embossed-link mr-3 float-right">Fullscreen</a>
+                            <a href="" class="custom exit-btn embossed-link mr-3 float-right">Exit Test</a>
+                        </div>
+                <div class="time-div">
+                    <button id="hide-btn" class="hide-btn-style">Hide Time</button>
+                    <div id="basicUsage" class="display-inline">00:00:00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row ml-0 mr-0">
+        <div class="col-md-6 col-12 direction-bg text-center p-3">
+            <p class="time-text">Directions:</p>
+            <p class="text-color justify">Your response will be judged on the basis of the quality of your writing and on how well your response presents the points in the lecture and their relationships to the reading passage. Typically, an effective response will be 150 to 225 words.</p>
+        </div>
+        <div class="col-md-6 col-12 note-bg text-center p-3">
+            <p class="time-text">Question:</p>
+            <p class="text-color justify">Summarize the points made in the lecture, being sure to explain how they respond to the specific arguments made in the reading passage.</p>
+
+        </div>
+    </div>
+    <div class="row bg-color mr-0 ml-0 pl-3 pr-3">
+        <div class="paragraph-area-col col-md-6 col-12 pt-3">
+            <div class="paragraph-area paragraph-scroll">
+                <p class="text-color justify">
+                    Sea otters are a small mammal that lives in the waters along North America's west coast from California to Alaska.  A few years ago some of the sea otter populations off of the Alaskan coast started to decline rapidly and raised several concerns because of their important role in the coastal ecosystem. Experts began investigating and came up with two possible explanations. One explanation was environmental pollution and the second was attacks by predators.
+                </p>
+                <p class="text-color justify pt-3">
+                    At first it seemed as if the pollution was the most likely cause for the population decline. One reason pollution was more likely was because of the known pollution sources along the Alaskan coast such as oil rigs. Also water samples taken in the area showed increased levels of chemicals that could decrease the otters' immune systems and indirectly result in their deaths.
+                </p>
+                <p class="text-color justify pt-3">
+                    Another thing that pointed to pollution as the culprit was the decline of other sea mammals such as seals in the same areas. This indicated that whatever was affecting the otters was also affecting the other sea mammals. Environmental pollution usually affects an entire ecosystem instead of just one species. Only predators that occurred in a large area, such as orcas (a large predatory whale), could cause the same effect, but they usually hunt larger prey.
+                </p>
+                <p class="text-color justify pt-3">
+                        Finally, scientists believed the pollution hypothesis would also explain the uneven pattern of otter decline. In some Alaskan locations the otter population declined greatly while other populations remained stable. Some experts  suggested this could be explained by ocean currents, or other environmental factor, might have created uneven concentrations of pollutants along the coast.
+                </p>
+                <p class="text-center end-text">** END **</p>
+            </div>
+        </div>
+        <div class="editor-area col-md-6 col-12 pt-3">
+            <div class="col-12 mb-2 short-div-bg">
+                <button class="editor-btn">Copy</button>
+                <button class="editor-btn">Cut</button>
+                <button class="editor-btn">Paste</button>
+                <p class="count-color float-right">Word Count: 0</p>
+            </div>
+            <textarea class="form-control bd-rad" rows="15">
+            </textarea>
+        </div>
+        <div class="scroll-page-footer margin">
+                <div class="col-12">
+                        &copy;Copyright 2018 Total TOEFL Time
+                </div>
+            </div>
+        <input type="hidden" id="is_scrolled">
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script>
+        var timer = new Timer();
+        timer.start();
+        timer.addEventListener('secondsUpdated', function (e) {
+        $('#basicUsage').html(timer.getTimeValues().toString());
+        });
+
+        $(document).ready(function(){
+            $("#hide-btn").click(function(){
+                if($(this).html() == 'Hide Time') {
+                    $(this).html('Show Time');
+                }
+                else{
+                    $(this).html('Hide Time');
+                }
+            $("#basicUsage").toggle();
+        });
+        });
+    //     $(window).on('load',function(){
+    //     $('#myModal').modal('show');
+    // });
+
+
+            $(".paragraph-scroll").scroll(function() {
+                // $( "#myModal" ).modal('show');
+                $( "#is_scrolled" ).val('yes');
+            });  
+        
+        $("#btn-next").click(function (e) {
+            e.preventDefault();
+            var href = $(this).attr("href");
+            if($("#is_scrolled").val() !== 'yes')
+            {
+                $( "#myModal" ).modal('show');
+                return false;
+            }
+            else{
+                location.href=href;
+            }
+            
+        });
+    </script>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="./img/tabimg.png">
+
+  <title>Toefl Test</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+  <link href="./css/toefl2.css" rel="stylesheet">
+  <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+  <script src="./js/height.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a href="#">
+            <img class="sidebrand" src="./img/logo.png">
+          </a>
+        </li>
+        <li>
+          <img class="sidebar-img" src="./img/line-chart.png">
+          <a href="#">Progress & Analysis</a>
+        </li>
+        <li>
+          <img class="sidebar-img" src="./img/edit.png">
+          <a href="#">TOEFL Questions</a>
+        </li>
+        <li>
+          <img class="sidebar-img" src="./img/test.png">
+          <a href="#">Tests & Reviews</a>
+        </li>
+        <li>
+          <img class="sidebar-img" src="./img/ask.png">
+          <a href="#">Ask an Instructor</a>
+        </li>
+      </ul>
+    </div>
+    <div id="page-content-wrapper" class="practise">
+      <div class="test-header-bg">
+        <div class="row px-5 ml-0 mr-0">
+          <div class="col-md-5 col-12">
+            <a href="#menu-toggle" class="side-menu-btn pd" id="menu-toggle"><i class="fa fa-chevron-right"></i></a>
+            <p class="test-header-text float-left pl-2 mb-0">TOEFL Practise Test</p>
+          </div>
+          <div class="col-md-7 col-12">
+            <span class="float-right py-2">
+              <a class="intro-text-place color-white cursor-pointer pr-2">Ask for Introduction</a>
+              <img class="intro-img-place pr-4" src="./img/ask-intro.png">
+              <a class="retry-text">Retry Test</a>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row ml-0 mr-0">
+        <div class="col-md-3 col-12 border-right pl-0 pr-0">
+          <div class="tab">
+            <button id="tabLinkLondon" class="tablinks" onclick="openCity(event, 'London')">Tests</button>
+            <button id="tabLinkParis" class="tablinks " onclick="openCity(event, 'Paris')">Reviews</button>
+          </div>
+          <div id="London" class=" tabcontent">
+            <ul class="left-list scrollable pl-0">
+              <li class=" tabcontent-li px-5">
+                <div class="col-12 pl-0 pr-0">
+                  <p class="mb-0">Micro Test@1
+                    <img class="cross-img float-right" src="./img/error.png">
+                    <span class="right-ans float-right pr-5">R: 0 &nbsp; L: 15</span>
+                  </p>
+                </div>
+                <div class="col-12 pl-0">
+                  <p class="mb-0">May 8
+                    <span class="right-ans float-right ans-pd">S: 0 &nbsp; W: 0</span>
+                  </p>
+                </div>
+              </li>
+              <li id="" class="tabcontent-li px-5">
+                <p class="mb-0">Practise Test 2
+                  <img class="lock-img float-right" src="./img/locked.png">
+                </p>
+              </li>
+              <li id="" class="tabcontent-li px-5">
+                <p class="mb-0">Practise Test 3
+                  <img class="lock-img float-right" src="./img/locked.png">
+                </p>
+              </li>
+              <li id="" class="tabcontent-li px-5">
+                <p class="mb-0">Practise Test 4
+                  <img class="lock-img float-right" src="./img/locked.png">
+                </p>
+              </li>
+              <li id="" class="tabcontent-li px-5">
+                <p class="mb-0">Practise Test 5
+                  <img class="lock-img float-right" src="./img/locked.png">
+                </p>
+              </li>
+              <li id="" class="tabcontent-li px-5">
+                <p class="mb-0">Practise Test 6
+                  <img class="lock-img float-right" src="./img/locked.png">
+                </p>
+              </li>
+              <li id="" class="tabcontent-li px-5">
+                <p class="mb-0">Practise Test 7
+                  <img class="lock-img float-right" src="./img/locked.png">
+                </p>
+              </li>
+              <li id="" class="tabcontent-li px-5">
+                <p class="mb-0">Practise Test 8
+                  <img class="lock-img float-right" src="./img/locked.png">
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div id="Paris" class="tabcontent" style="display:none;">
+            <li id="" class="tabcontent-li px-5">
+              <p class="mb-0">Reviews
+                <img class="lock-img float-right" src="./img/locked.png">
+              </p>
+            </li>
+          </div>
+        </div>
+
+        <div class="col-md-9 col-12 px-0 rightContentLondon">
+          <div class="bg-white box-shadow2">
+            <div class="row mr-0 ml-0">
+              <div class="col-6 text-center">
+                <p class="txt-color2 ft-size p-4 mb-0">Micro Test 1</p>
+              </div>
+              <div class="col-6 text-center">
+                <p class="txt-color2 ft-size p-4 mb-0">15/20</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="small-divs row mr-0 ml-0">
+
+            <div class="single-sm-div col-md-6 col-12 px-5 pt-5 pb-1">
+              <div class="panel-shadow mb-5">
+                <div class="panel-header">
+                  <div class="row ml-0 mr-0 py-2">
+                    <div class="col-6 text-center">
+                      <p class="p-head-text mb-0">Reading</p>
+                    </div>
+                    <div class="col-6 text-center">
+                      <p class="p-head-count mb-0">0/30</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-body">
+                  <div class="col-12 text-center pt-5 pb-3">
+                    <a href="" class="panel-btn px-5">Review Answers</a>
+                  </div>
+                  <div class="col-12 text-center pb-4">
+                    <a href="" class="text-color">Retry Section</a>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-shadow mb-5">
+                <div class="panel-header">
+                  <div class="row ml-0 mr-0 py-2">
+                    <div class="col-6 text-center">
+                      <p class="p-head-text mb-0">Speaking</p>
+                    </div>
+                    <div class="col-6 text-center">
+                      <p class="p-head-count mb-0">0/30</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-body">
+                  <div class="col-12 text-center pt-5 pb-3">
+                    <a href="" class="panel-btn px-5">Review Answers</a>
+                  </div>
+                  <div class="col-12 text-center pb-4">
+                    <a href="" class="text-color">Retry Section</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="single-sm-div col-md-6 col-12 px-5 pt-5 pb-1">
+              <div class="panel-shadow mb-5">
+                <div class="panel-header">
+                  <div class="row ml-0 mr-0 py-2">
+                    <div class="col-6 text-center">
+                      <p class="p-head-text mb-0">Listening</p>
+                    </div>
+                    <div class="col-6 text-center">
+                      <p class="p-head-count mb-0">0/30</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-body">
+                  <div class="col-12 text-center pt-5 pb-3">
+                    <a href="" class="panel-btn px-5">Review Answers</a>
+                  </div>
+                  <div class="col-12 text-center pb-4">
+                    <a href="" class="text-color">Retry Section</a>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-shadow mb-5">
+                <div class="panel-header">
+                  <div class="row ml-0 mr-0 py-2">
+                    <div class="col-6 text-center">
+                      <p class="p-head-text mb-0">Writing</p>
+                    </div>
+                    <div class="col-6 text-center">
+                      <p class="p-head-count mb-0">0/30</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-body">
+                  <div class="col-12 text-center pt-5 pb-3">
+                    <a href="" class="panel-btn px-5">Review Answers</a>
+                  </div>
+                  <div class="col-12 text-center pb-4">
+                    <a href="" class="text-color">Retry Section</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-9 col-12 px-0 rightContentParis" style="display:none;">
+          <div class="bg-white box-shadow2">
+            <div class="row mr-0 ml-0">
+              <div class="col-6 text-center">
+                <p class="txt-color2 ft-size p-4 mb-0">Reviews</p>
+              </div>
+              <div class="col-6 text-center">
+                <p class="txt-color2 ft-size p-4 mb-0"></p>
+              </div>
+            </div>
+          </div>
+          <div class="small-divs row mr-0 ml-0">
+
+
+
+            <div class="single-sm-div col-md-6 col-12 px-5 pt-5 pb-1">
+              <div class="panel-shadow mb-5">
+                <div class="panel-header">
+                  <div class="row ml-0 mr-0 py-2">
+                    <div class="col-6 text-center">
+                      <p class="p-head-text mb-0">Listening</p>
+                    </div>
+                    <div class="col-6 text-center">
+                      <p class="p-head-count mb-0">0/30</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-body">
+                  <div class="col-12 text-center pt-5 pb-3">
+                    <a href="" class="panel-btn px-5">Review Answers</a>
+                  </div>
+                  <div class="col-12 text-center pb-4">
+                    <a href="" class="text-color">Retry Section</a>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-shadow mb-5">
+                <div class="panel-header">
+                  <div class="row ml-0 mr-0 py-2">
+                    <div class="col-6 text-center">
+                      <p class="p-head-text mb-0">Writing</p>
+                    </div>
+                    <div class="col-6 text-center">
+                      <p class="p-head-count mb-0">0/30</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-body">
+                  <div class="col-12 text-center pt-5 pb-3">
+                    <a href="" class="panel-btn px-5">Review Answers</a>
+                  </div>
+                  <div class="col-12 text-center pb-4">
+                    <a href="" class="text-color">Retry Section</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="page-footer">
+          <div class="col-12 text-center">
+                  &copy;Copyright 2018 Total TOEFL Time
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+  <script src="./js/bootstrap.min.js"></script>
+
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+
+      if (cityName == 'London') {
+        $('.rightContentLondon').show();
+        $('.rightContentParis').hide();
+      } else {
+        $('.rightContentLondon').hide();
+        $('.rightContentParis').show();
+      }
+    }
+    var $ = jQuery;
+
+    // This will be performed on page load after sometime 
+    $(function () {
+      $('#tabLinkLondon').addClass('active');
+      $('#London').show();
+
+      $('.rightContentLondon').show();
+      $('.rightContentParis').hide();
+    });
+
+     $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    
+  </script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./img/tabimg.png">
+
+    <title>Toefl Test</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/toefl2.css" rel="stylesheet">
+    <script src="src/recorder.js"></script>
+    <script src="src/Fr.voice.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/app.js"></script>
+    
+        <style>
+            .button{
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0px 5px;
+                padding: 5px 12px;
+                cursor: pointer;
+                outline: none;
+                font-size: 13px;
+                text-decoration: none !important;
+                text-align: center;
+                color:#fff;
+                background-color: #2f7885;
+                background-image: linear-gradient(top,#4D90FE, #4787ED);
+                background-image: -ms-linear-gradient(top,#4D90FE, #4787ED);
+                background-image: -o-linear-gradient(top,#4D90FE, #4787ED);
+                background-image: linear-gradient(top,#4D90FE, #4787ED);
+                color: white!important;
+                box-shadow: 0 1px 3px #BFBFBF;
+            }
+            a.button{
+                color: #fff;
+            }
+            .button:hover{
+                box-shadow: inset 0px 1px 1px #8C8C8C;
+            }
+            .button.disabled{
+                box-shadow:none;
+                opacity:0.7;
+            }
+        canvas{
+            height: 55px;
+            margin-top: 4px;
+        }
+        </style>
+        <script src="./js/height.js"></script>
+  </head>
+
+  <body>
+
+    <div class="top-header bg-white border py-3">
+      <div class="note-row row px-5 ml-0 mr-0">
+        <div class="logo-brand col-md-5 col-12">
+            <div class="for-responsive">
+                <img class="img-size" src="./img/logo.png">
+            </div>
+        </div>
+        <div class="header-btn5 col-md-7 col-12">
+                <span class="float-right py-3">
+                    <span class="three-btn">
+                      <a href="" class="custom exit-btn embossed-link mr-2">Exit Test</a>
+                      <a href="" class="custom fulscrn-btn full-embossed-link mr-2">View Text</a>
+                      <a href="" class="custom fulscrn-btn full-embossed-link mr-2">Playback Response</a>
+                      <a href="" class="custom fulscrn-btn full-embossed-link mr-2">Record Again</a>
+                    </span>
+                  <a href="" class="custom-vol vol-btn vol-rotate vol-embossed-link"><span class="straight"><span class="vol-text">Volume</span><br><img class="icon-align"  src="./img/VolumeIcon.png"></span></a>
+                </span>
+        </div>
+        <!-- <div class="col-md-7 col-12">
+          <span class="single-vol-btn py-3">
+                <div class="btn-below4"> 
+                    <a href="" class="custom-vol vol-btn vol-rotate vol-embossed-link float-right"><span class="straight"><span class="vol-text">Volume</span><br><img class="icon-align" src="./img/VolumeIcon.png"></span></a>
+                    <a class="custom fulscrn-btn full-embossed-link float-right">Record Again</a>
+                    <a href="" class="custom fulscrn-btn full-embossed-link mr-3 float-right">Playback Response</a>
+                    <a href="" class="custom fulscrn-btn full-embossed-link mr-3 float-right">View Text</a>
+                    <a href="" class="custom exit-btn embossed-link mr-3 float-right">Exit Test</a>
+                </div>
+          </span>
+        </div> -->
+      </div>
+    </div>
+    <div class="content-area">
+        <div class="col-12 text-center pt-5">
+            <p class="time-text">Note:This section will not appear on an actual TOEFL test.</p>
+        </div>
+        <div class="row ml-0 mr-0">
+            <div class="col-md-6 col-12 text-center">
+                    <p class="text-color">The flash recorder requires you give it permission to access your microphone.</p>
+                    <p class="text-color">In order to do that, you must CLICK the Red Circle Button on the left side of the recorder.</p>
+                    <p class="text-color">After clicking the red button, a popup box will appear asking you to give the flash recorder permission.</p>
+                    <p class="text-color">CLICK Allow to give it permission.</p>
+                    <p class="text-color">After clicking allow, you will automatically be taken to the next screen.</p>
+            </div>
+            <div class="col-md-6 col-12 text-center">
+                <h2>Record</h2>
+                    <audio controls id="audio"></audio>
+                <div>
+                <a class="button recordButton" id="record">Record</a>
+                <a class="button recordButton" id="recordFor5">Record For 5 Seconds</a>
+                <a class="button disabled one" id="pause">Pause</a>
+                <a class="button disabled one" id="stop">Reset</a>
+                </div><br/>
+                <div>
+                <input class="button" type="checkbox" id="live"/>
+                <label for="live">Live Output</label>
+                </div>
+                    <div data-type="wav">
+                        <p>WAV Controls:</p>
+                        <a class="button disabled one" id="play">Play</a>
+                        <a class="button disabled one" id="download">Download</a>
+                <a class="button disabled one" id="base64">Base64 URL</a>
+                <a class="button disabled one" id="save">Upload to Server</a>
+                    </div>
+                <canvas class="text-center" id="level" height="200" width="500"></canvas>
+            </div>
+        </div>
+        <div class="page-footer">
+                <div class="col-12 text-center">
+                        &copy;Copyright 2018 Total TOEFL Time
+                </div>
+            </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

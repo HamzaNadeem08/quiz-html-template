@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./img/tabimg.png">
+
+    <title>Toefl Test</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <!-- Custom styles for this template -->
+    <link href="./css/toefl2.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/app.js"></script>
+    <script src="./js/height.js"></script>
+</head>
+
+<body>
+
+    <div class="top-header bg-white border py-3">
+        <div class="note-row row px-5 ml-0 mr-0">
+            <div class="logo-brand col-md-5 col-12">
+                <div class="for-responsive">
+                    <img class="img-size" src="./img/logo.png">
+                </div>
+            </div>
+            <div class="header-btn5 col-md-7 col-12">
+                <span class="float-right py-3">
+                    <span class="three-btn">
+                        <a href="" class="custom exit-btn embossed-link mr-2">Exit Test</a>
+                        <a href="" class="custom fulscrn-btn full-embossed-link mr-2">View Text</a>
+                        <a href="" class="custom fulscrn-btn full-embossed-link mr-2">Playback Response</a>
+                        <a href="" class="custom fulscrn-btn full-embossed-link mr-2">Record Again</a>
+                    </span>
+                    <a href="" class="custom-vol vol-btn vol-rotate vol-embossed-link">
+                        <span class="straight">
+                            <span class="vol-text">Volume</span>
+                            <br>
+                            <img class="icon-align" src="./img/VolumeIcon.png">
+                        </span>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="content-area">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+            Launch demo modal
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered max-width" role="document">
+                <div class="modal-content modal-border">
+                    <div class="modal-body p-0">
+                        <div class="container-fluid p-0">
+                            <div class="row">
+                                <div class="col-md-2 col-12 left-area-bg p-0 top-modal-bar2">
+                                    <ul class="nav nav-tabs no-style p-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="incorrect-tab" data-toggle="tab" href="#incorrectContent" role="tab" aria-controls="home"
+                                                aria-selected="true">INCORRECT ANSWERS</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="correct-tab" data-toggle="tab" href="#correctContent" role="tab" aria-controls="home" aria-selected="true">CORRECT ANSWERS</a>
+                                        </li>
+                                        <li class="nav-item responsive">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">×</span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-2 col-12 left-area-bg p-0 top-modal-bar1">
+                                    <ul class="nav nav-tabs no-style p-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="incorrect-tab" data-toggle="tab" href="#incorrectContent" role="tab" aria-controls="home"
+                                                aria-selected="true">INCORRECT ANSWERS</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="correct-tab" data-toggle="tab" href="#correctContent" role="tab" aria-controls="home" aria-selected="true">CORRECT ANSWERS</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-10 col-12 right-area-pd py-3">
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="incorrectContent" role="tabpanel" aria-labelledby="incorrect-tab">
+                                            <div class="row ml-0 mr-0 top-modal-bar1">
+                                                <div class="col-3 col-xs-12">
+                                                    <div class="question-score-block">
+                                                        <span class="quest-num d-block">
+                                                            <strong>Question 1</strong>
+                                                        </span>
+                                                        <span class="toefl-score">TOEFL SCORE:
+                                                            <span class="points">0 / 1</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 col-xs-12 text-center">
+                                                    <div class="quest-pagination">
+                                                        <a href="#" class="black">
+                                                            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                                        </a>
+                                                        <span class="current">&nbsp;&nbsp;5</span>&nbsp;/&nbsp;
+                                                        <span class="total">12&nbsp;&nbsp;</span>
+                                                        <a href="#" class="black">
+                                                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 col-xs-12">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="row ml-0 mr-0 top-modal-bar2">
+                                                <div class="col-6 float-left">
+                                                    <div class="question-score-block">
+                                                        <span class="quest-num d-block">
+                                                            <strong>Question 1</strong>
+                                                        </span>
+                                                        <span class="toefl-score">TOEFL SCORE:
+                                                            <span class="points">0 / 1</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 float-left">
+                                                    <div class="quest-pagination float-right">
+                                                        <a href="#" class="black">
+                                                            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                                        </a>
+                                                        <span class="current">&nbsp;&nbsp;5</span>&nbsp;/&nbsp;
+                                                        <span class="total">12&nbsp;&nbsp;</span>
+                                                        <a href="#" class="black">
+                                                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row ml-0 mr-0 pt-4 result-responsive clear-border">
+                                                <div class="col-md-6 col-12 scroll-bar-wrap">
+                                                    <div class="modal-evolution-scroll">
+                                                        <div class="question-div">
+                                                            <p class="actual-question">The word 'evolution' in paragraph 1 is closest in meaning to:</p>
+                                                            <div class="options-div pt-4">
+                                                                <label class="container disabled pl-5">
+                                                                    <b>Progress</b>
+                                                                    <input type="radio" checked="checked" name="radio" checked="false">
+                                                                    <span class="checkmark rounded"></span>
+                                                                </label>
+                                                                <label class="container disabled pl-5">
+                                                                    <b>Change in habits and behaviour</b>
+                                                                    <input type="radio" name="radio">
+                                                                    <span class="checkmark rounded"></span>
+                                                                </label>
+                                                                <label class="container pl-5">
+                                                                    <span class="wrong-ans">Change in heritable traits</span>
+                                                                    <input type="radio" name="radio">
+                                                                    <span class="checkmark-red"></span>
+                                                                </label>
+                                                                <label class="container pl-5">
+                                                                    <span class="correct-ans">Development of human species</span>
+                                                                    <input type="radio" name="radio">
+                                                                    <span class="checkmark-green"></span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="answer-explanation-div mt-5">
+                                                            <h6 class="ans-heading-bg">ANSWER EXPLANATION</h6>
+                                                            <p>
+                                                                (C) is the correct answer.
+                                                                <br>It is the correct answer because it is closest in meaning
+                                                                to the word evolution.
+                                                                <br>
+                                                                <br> The key to answering this question is to highlight the word
+                                                                in the sentence and clarify its meaning and part of speech.
+                                                                <br> It is believed that eyes evolved over a few million years
+                                                                during the Cambrian explosion, a rapid period of evolution.
+                                                                <br> Evolution is the noun form of evolve, which means change
+                                                                and develop. Eyes changed and developed over millions of
+                                                                years. Therefore, answer C is correct.
+                                                                <br>
+                                                                <br> (A) is incorrect because this word means mutation in habits
+                                                                and activities. The text refers to changes in a physical
+                                                                organ, not habits or activities.
+                                                                <br>
+                                                                <br> (B) is not the correct answer because the paragraph is not
+                                                                referring to changes in habits and behaviours, but to eyes.
+                                                                <br>
+                                                                <br> (D) is not the correct answer because the author is writing
+                                                                about the evolution of eyes in both animals and humans.
+                                                            </p>
+                                                        </div>
+                                                        <div class="cover-bar"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-12 scroll-bar-wrap">
+                                                    <div class="modal-evolution-scroll">
+                                                        <h5 class="text-center pb-3">The Evolution Of Eyes</h5>
+                                                        <p class="text-color-dark justify px-2">
+                                                            <span class="evolution-numb">[1]</span> It is believed that eyes evolved over a few million
+                                                            years during the Cambrian explosion, a rapid period of
+                                                            <span class="highlighted">evolution</span> . Prior to this era, there is no direct evidence
+                                                            of eyes. Eyes have a vast range of adaptations to meet the needs
+                                                            of the organism. They vary in visual acuity, the array of wavelength
+                                                            detected, sensitivity in low light, color discrimination and
+                                                            their capacity to identify motion.
+                                                        </p>
+                                                        <p class="text-color-dark justify px-2">
+                                                            <span class="evolution-numb">[2]</span> Charles Darwin, in On the Origin of Species, suggests
+                                                            that the eye evolved from "an optic nerve merely coated with
+                                                            pigment, and without any other mechanism" to "a moderately high
+                                                            stage of perfection". Darwin presented intermediate grades of
+                                                            evolution and made suggestions that were soon shown to be correct.
+                                                            Since this time, modern scientists have been putting forward
+                                                            work on the topic of eye evolution, suggesting that the eye developed
+                                                            from a vertebrate patch of photoreceptors. Current research
+                                                            <span class="highlighted">validates</span> the theory of Darwin.
+                                                        </p>
+                                                        <p class="text-color-dark justify px-2">
+                                                            <span class="evolution-numb">[3]</span> The first eye fossils date back to 540 million years
+                                                            ago. Prior to this time, organisms may have had use for light
+                                                            sensitivity, but not for fast locomotion and navigation by vision.
+                                                            However, it remains difficult to evaluate the rate of eye evolution
+                                                            because the fossil record of this period is weak. The development
+                                                            of the circular patch of photoreceptor cells into a fully functional
+                                                            vertebrate eye has been
+                                                            <span class="highlighted">estimated</span> on the rates of mutation, relative benefit to
+                                                            the organism and natural selection. Based on these estimations,
+                                                            it is suggested that it would take less than 364,000 years for
+                                                            the complete evolution of the eye.
+                                                        </p>
+
+                                                        <p class="text-color-dark justify px-2">
+                                                            <span class="evolution-numb">[4]</span>The fundamental light-processing unit of the eye is
+                                                            the photoreceptor cell, a specialized cell with two types of
+                                                            molecules in its membrane: the opsin, a light-sensitive protein,
+                                                            and the chromophore – a pigment that can distinguish colors –
+                                                            which it surrounds. This group of cells is called an ‘eyespot'.
+                                                            These eyespots allow animals a basic sense of light direction
+                                                            and intensity. However, 96% of species have a more complex optical
+                                                            system that allows light discrimination within a few degrees.
+                                                            <span class="highlighted">These optical systems began as multicellular eye patches and
+                                                                gradually evolved into a cup</span> which first allowed the
+                                                            capacity to discriminate brightness in directions, then in finer
+                                                            and finer directions as the pit became deeper. Whereas a flat
+                                                            shape of the eyes allowed limited directional differentiation,
+                                                            the cup shape of the pit eye allows for increasingly precise
+                                                            visual information. Pit eyes, which date back to the Cambrian
+                                                            period, were detected in ancient snails, and are still found
+                                                            in snails today.
+                                                        </p>
+                                                        <p class="text-color-dark justify px-2">
+                                                            <span class="evolution-numb">[5]</span>When a photon is absorbed by the chromophore, a chemical
+                                                            reaction causes the photon's energy to be converted into electrical
+                                                            energy and relayed, in higher animals, to the nervous system.
+                                                            These photoreceptor cells form part of the retina, a thin layer
+                                                            of cells that relays visual information, including the light
+                                                            and day-length information needed by the circadian rhythm system,
+                                                            to the brain. However, some jellyfish, such as Cladonema, have
+                                                            elaborate eyes but no brain. Their eyes
+                                                            <span class="highlighted">transmit</span> a message directly to the muscles without the
+                                                            intermediate processing provided by a brain.
+                                                        </p>
+                                                        <p class="text-color-dark justify px-2">
+                                                            <span class="evolution-numb">[6]</span>During the Cambrian explosion, evolution of the eye
+                                                            was very fast, with dramatic developments in image-processing
+                                                            and light direction detection. As the photosensitive cell region
+                                                            developed, there came a point when the reduction of the width
+                                                            of the light opening became more efficient for visual resolution
+                                                            than the ongoing deepening of the cup. With a reduced size of
+                                                            the opening, organisms achieved true imaging, allowing for finer
+                                                            sensing of direction and shape. The Nautilus, a marine mollusc,
+                                                            has this type of opening. Without a cornea or lens, the eye openings
+                                                            provide poor resolution and dim imaging. However, they are still
+                                                            a major evolution from the earlier eye patches.
+                                                        </p>
+                                                        <p class="text-color-dark justify px-2">
+                                                            <span class="evolution-numb">[7]</span>So, why is it that eyes specialize in detecting a specific,
+                                                            narrow range of wavelengths on the electromagnetic
+                                                            <span class="highlighted">spectrum</span> —the visible spectrum? It is probably because
+                                                            the earliest species to develop photosensitivity were aquatic
+                                                            (such as jellyfish), and only two specific wavelength ranges
+                                                            of electromagnetic radiation, blue and green visible light, can
+                                                            be transmitted through water. This same light-filtering property
+                                                            of water also influenced the photosensitivity of plants.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="correctContent" role="tabpanel" aria-labelledby="correct-tab">
+                                            <div class="row ml-0 mr-0 top-modal-bar1">
+                                                <div class="col-3 col-xs-12">
+                                                    <div class="question-score-block">
+                                                        <span class="quest-num d-block">
+                                                            <strong>Question 1</strong>
+                                                        </span>
+                                                        <span class="toefl-score">TOEFL SCORE:
+                                                            <span class="points">0 / 1</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 col-xs-12 text-center">
+                                                    <div class="quest-pagination">
+                                                        <a href="#" class="black">
+                                                            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                                        </a>
+                                                        <span class="current">&nbsp;&nbsp;5</span>&nbsp;/&nbsp;
+                                                        <span class="total">12&nbsp;&nbsp;</span>
+                                                        <a href="#" class="black">
+                                                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 col-xs-12">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="row ml-0 mr-0 top-modal-bar2">
+                                                <div class="col-6 float-left">
+                                                    <div class="question-score-block">
+                                                        <span class="quest-num d-block">
+                                                            <strong>Question 1</strong>
+                                                        </span>
+                                                        <span class="toefl-score">TOEFL SCORE:
+                                                            <span class="points">0 / 1</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 float-left">
+                                                    <div class="quest-pagination float-right">
+                                                        <a href="#" class="black">
+                                                            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                                        </a>
+                                                        <span class="current">&nbsp;&nbsp;5</span>&nbsp;/&nbsp;
+                                                        <span class="total">12&nbsp;&nbsp;</span>
+                                                        <a href="#" class="black">
+                                                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row ml-0 mr-0 pt-4 result-responsive clear-border">
+                                                <div class="col-md-6 col-12 scroll-bar-wrap">
+                                                    <div class="modal-evolution-scroll">
+                                                        <div class="question-div">
+                                                            <p class="actual-question">The word 'evolution' in paragraph 1 is closest in meaning to:</p>
+                                                            <div class="options-div pt-4">
+                                                                <label class="container disabled pl-5">
+                                                                    <b>Progress</b>
+                                                                    <input type="radio" checked="checked" name="radio" checked="false">
+                                                                    <span class="checkmark rounded"></span>
+                                                                </label>
+                                                                <label class="container disabled pl-5">
+                                                                    <b>Change in habits and behaviour</b>
+                                                                    <input type="radio" name="radio">
+                                                                    <span class="checkmark rounded"></span>
+                                                                </label>
+                                                                <label class="container disabled pl-5">
+                                                                    <b>Change in heritable traits</b>
+                                                                    <input type="radio" name="radio">
+                                                                    <span class="checkmark rounded"></span>
+                                                                </label>
+                                                                <label class="container pl-5">
+                                                                    <span class="correct-ans">Development of human species</span>
+                                                                    <input type="radio" name="radio">
+                                                                    <span class="checkmark-green"></span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="answer-explanation-div mt-5">
+                                                            <h6 class="ans-heading-bg">ANSWER EXPLANATION</h6>
+                                                            <p>
+                                                                (C) is the correct answer.
+                                                                <br>It is the correct answer because it is closest in meaning
+                                                                to the word evolution.
+                                                                <br>
+                                                                <br> The key to answering this question is to highlight the word
+                                                                in the sentence and clarify its meaning and part of speech.
+                                                                <br> It is believed that eyes evolved over a few million years
+                                                                during the Cambrian explosion, a rapid period of evolution.
+                                                                <br> Evolution is the noun form of evolve, which means change
+                                                                and develop. Eyes changed and developed over millions of
+                                                                years. Therefore, answer C is correct.
+                                                                <br>
+                                                                <br> (A) is incorrect because this word means mutation in habits
+                                                                and activities. The text refers to changes in a physical
+                                                                organ, not habits or activities.
+                                                                <br>
+                                                                <br> (B) is not the correct answer because the paragraph is not
+                                                                referring to changes in habits and behaviours, but to eyes.
+                                                                <br>
+                                                                <br> (D) is not the correct answer because the author is writing
+                                                                about the evolution of eyes in both animals and humans.
+                                                            </p>
+                                                        </div>
+                                                        <div class="cover-bar"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-12 scroll-bar-wrap">
+                                                    <div class="modal-evolution-scroll">
+                                                        <h5 class="text-center pb-3">The Evolution Of Eyes</h5>
+                                                        <p class="text-color-dark justify px-2">
+                                                            <span class="evolution-numb">[1]</span> It is believed that eyes evolved over a few million
+                                                            years during the Cambrian explosion, a rapid period of
+                                                            <span class="highlighted">evolution</span> . Prior to this era, there is no direct evidence
+                                                            of eyes. Eyes have a vast range of adaptations to meet the needs
+                                                            of the organism. They vary in visual acuity, the array of wavelength
+                                                            detected, sensitivity in low light, color discrimination and
+                                                            their capacity to identify motion.
+                                                        </p>
+                                                        <p class="text-color-dark justify px-2">
+                                                            <span class="evolution-numb">[2]</span> Charles Darwin, in On the Origin of Species, suggests
+                                                            that the eye evolved from "an optic nerve merely coated with
+                                                            pigment, and without any other mechanism" to "a moderately high
+                                                            stage of perfection". Darwin presented intermediate grades of
+                                                            evolution and made suggestions that were soon shown to be correct.
+                                                            Since this time, modern scientists have been putting forward
+                                                            work on the topic of eye evolution, suggesting that the eye developed
+                                                            from a vertebrate patch of photoreceptors. Current research
+                                                            <span class="highlighted">validates</span> the theory of Darwin.
+                                                        </p>
+                                                        <p class="text-color-dark justify px-2">
+                                                            <span class="evolution-numb">[3]</span> The first eye fossils date back to 540 million years
+                                                            ago. Prior to this time, organisms may have had use for light
+                                                            sensitivity, but not for fast locomotion and navigation by vision.
+                                                            However, it remains difficult to evaluate the rate of eye evolution
+                                                            because the fossil record of this period is weak. The development
+                                                            of the circular patch of photoreceptor cells into a fully functional
+                                                            vertebrate eye has been
+                                                            <span class="highlighted">estimated</span> on the rates of mutation, relative benefit to
+                                                            the organism and natural selection. Based on these estimations,
+                                                            it is suggested that it would take less than 364,000 years for
+                                                            the complete evolution of the eye.
+                                                        </p>
+
+                                                        <p class="text-color-dark justify px-2">
+                                                            <span class="evolution-numb">[4]</span>The fundamental light-processing unit of the eye is
+                                                            the photoreceptor cell, a specialized cell with two types of
+                                                            molecules in its membrane: the opsin, a light-sensitive protein,
+                                                            and the chromophore – a pigment that can distinguish colors –
+                                                            which it surrounds. This group of cells is called an ‘eyespot'.
+                                                            These eyespots allow animals a basic sense of light direction
+                                                            and intensity. However, 96% of species have a more complex optical
+                                                            system that allows light discrimination within a few degrees.
+                                                            <span class="highlighted">These optical systems began as multicellular eye patches and
+                                                                gradually evolved into a cup</span> which first allowed the
+                                                            capacity to discriminate brightness in directions, then in finer
+                                                            and finer directions as the pit became deeper. Whereas a flat
+                                                            shape of the eyes allowed limited directional differentiation,
+                                                            the cup shape of the pit eye allows for increasingly precise
+                                                            visual information. Pit eyes, which date back to the Cambrian
+                                                            period, were detected in ancient snails, and are still found
+                                                            in snails today.
+                                                        </p>
+                                                        <p class="text-color-dark justify px-2">
+                                                            <span class="evolution-numb">[5]</span>When a photon is absorbed by the chromophore, a chemical
+                                                            reaction causes the photon's energy to be converted into electrical
+                                                            energy and relayed, in higher animals, to the nervous system.
+                                                            These photoreceptor cells form part of the retina, a thin layer
+                                                            of cells that relays visual information, including the light
+                                                            and day-length information needed by the circadian rhythm system,
+                                                            to the brain. However, some jellyfish, such as Cladonema, have
+                                                            elaborate eyes but no brain. Their eyes
+                                                            <span class="highlighted">transmit</span> a message directly to the muscles without the
+                                                            intermediate processing provided by a brain.
+                                                        </p>
+                                                        <p class="text-color-dark justify px-2">
+                                                            <span class="evolution-numb">[6]</span>During the Cambrian explosion, evolution of the eye
+                                                            was very fast, with dramatic developments in image-processing
+                                                            and light direction detection. As the photosensitive cell region
+                                                            developed, there came a point when the reduction of the width
+                                                            of the light opening became more efficient for visual resolution
+                                                            than the ongoing deepening of the cup. With a reduced size of
+                                                            the opening, organisms achieved true imaging, allowing for finer
+                                                            sensing of direction and shape. The Nautilus, a marine mollusc,
+                                                            has this type of opening. Without a cornea or lens, the eye openings
+                                                            provide poor resolution and dim imaging. However, they are still
+                                                            a major evolution from the earlier eye patches.
+                                                        </p>
+                                                        <p class="text-color-dark justify px-2">
+                                                            <span class="evolution-numb">[7]</span>So, why is it that eyes specialize in detecting a specific,
+                                                            narrow range of wavelengths on the electromagnetic
+                                                            <span class="highlighted">spectrum</span> —the visible spectrum? It is probably because
+                                                            the earliest species to develop photosensitivity were aquatic
+                                                            (such as jellyfish), and only two specific wavelength ranges
+                                                            of electromagnetic radiation, blue and green visible light, can
+                                                            be transmitted through water. This same light-filtering property
+                                                            of water also influenced the photosensitivity of plants.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Bootstrap core JavaScript
+    ================================================== -->
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+            <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
